@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family:'Poppins';
+    src: url(/public/Fonts/Nunito-ExtraLight.ttf);
+    font-weight: 400;
+    font-style:italic ;
+}
+@font-face {
+    font-family:'Poppins';
+    src: url(/public/Fonts/Nunito-Regular.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Poppins';
+    src: url(/public/Fonts/Nunito-LightItalic.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Poppins';
+    src: url(/public/Fonts/Nunito-SemiBold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Poppins';
+    src: url(/public/Fonts/Nunito-Bold.ttf);
+    font-weight:800;
+    font-style:bold ;
+}
+@font-face {
+    font-family:'Poppins';
+    src: url(/public/Fonts/Nunito-ExtraBold.ttf);
+    font-weight: 900;
+    font-style: normal;
+}

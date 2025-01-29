@@ -1,11 +1,394 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MainLayout from "../layouts/MainLayout.astro";
+import img5 from "../assets/images/img5.jpg"
+import img7 from "../assets/images/img7.jpg"
+import ax1 from "../assets/images/ax1.jpg"
+import ax2 from "../assets/images/ax2.jpg"
+import ax3 from "../assets/images/ax3.jpg"
+import ax4 from "../assets/images/ax4.jpg"
+import ax5 from "../assets/images/ax5.jpg"
+import ax6 from "../assets/images/ax6.jpg"
+import ax7 from "../assets/images/ax7.jpg"
+import ax8 from "../assets/images/ax8.jpg"
+import ax9 from "../assets/images/ax9.jpg"
+import ax10 from "../assets/images/ax10.jpg"
+import ax11 from "../assets/images/ax11.jpg"
+import ax12 from "../assets/images/ax12.jpg"
+import banner from "../assets/images/banner.jpg"
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout>
+  <section>
+    <div class="swiper slider-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src={img5.src} alt="Bild-1" />
+          <h1>Inovative spitzenthechnologie</h1>
+          <p>
+            Eine einzigartiges Einkaufserlebnis jetzt mit inklusiven Rabatten!
+          </p>
+          <span>
+            Unsere Smartwatches bieten das perfekte Gleichgewicht zwischen Stil
+            und Funktionalität. Egal, ob als zeitloses Accessoire für den Alltag
+            oder als besonderen Begleiter für spezielle Anlässe - Die perfekte
+            Ergänzung zu deiner individuellen Persönlichkeit.
+          </span>
+        </div>
+      </div>
+    </div>
+    <section class="first">
+      <div class="box-icon">
+        <div class="change">
+          <i class="fa-solid fa-repeat"></i>
+          <p>Einfache Rückgabe</p>
+        </div>
+        <div class="check">
+          <i class="fa-solid fa-medal"></i>
+          <p>Geprüfte Produkte</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <aside>
+    <div class="aside-1">
+      <div class="warum">
+        <h1>Warum haben Sie uns ausgewählt?</h1>
+        <p>
+          Neben qualitativ hochwertigen Produkten zu fairen Preisen legen wir
+          besonderen Wert auf die Bedürfnisse unserer Kunden. Um ihre
+          Zufriedenheit sowie ein einfaches und vertrauenswürdiges Kauferlebnis
+          zu gewährleisten, setzten wir auf sichere Zahlungsanbieter, die einen
+          umfassenden Käuferschutz anbieten.
+        </p>
+      </div>
+
+      <div class="alltag">
+        <h1>Dein stilvoller Begleiter im Alltag</h1>
+        <p>
+          Entdecke eine breite Palette eleganter Smartwatches, die deinen
+          persönlichen Stil unterstreichen. Egal ob klassisch oder modern, lass
+          dich von unserer Vielfalt inspirieren und finde die Smartwatch, die zu
+          dir passt.
+        </p>
+        <img src={img7.src} alt="bild-2" />
+      </div>
+    </div>
+  </aside>
+  <section>
+    <div class="vision-container">
+      <div class="vision">
+        <h1>Unsere Vision</h1>
+        <p>
+          Wir streben danach, stilvolle und hochwertige Smartwatches zu
+          entwickeln, die nicht nur elegant aussehen, sondern auch das
+          alltägliche Leben unserer Kunden verbessern. Unser Ziel ist es,
+          zeitlose Designs zu schaffen, die durch ihre Funktionalität und
+          Qualität überzeugen.
+        </p>
+        <a href="/produkt" class="vision-button">jetzt entdecken</a>
+        <div class="vision-produkt"> 
+          <img src={ax1.src} alt="Bild 1" />
+          <img src={ax2.src} alt="Bild 2" />
+          <img src={ax3.src} alt="Bild 3" />
+          <img src={ax4.src} alt="Bild 4" />
+          <img src={ax5.src} alt="Bild 5" />
+          <img src={ax6.src} alt="Bild 6" />
+          <img src={ax7.src} alt="Bild 7" />
+          <img src={ax8.src} alt="Bild 8" />
+          <img src={ax9.src} alt="Bild 9" />
+          <img src={ax10.src} alt="Bild 10" />
+          <img src={ax11.src} alt="Bild 11" />
+          <img src={ax12.src} alt="Bild 12" />
+        </div>
+      </div>
+    </div>
+  </section>
+ <section class="banner-section">
+  <div class="banner">
+    <img src={banner.src} alt="">
+    <h1>Beratung und Anleitung erhalten</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste molestiae modi quo tempora quod facere dignissimos sit laudantium anim.....
+    </p>
+  </div>
+</section>
+</MainLayout>
+
+  <style>
+
+    .banner-section{
+   
+      width: 100%;
+      height: 400px;
+      position: relative;
+
+    }
+    .banner {
+      position:relative ;
+      width: 100%;
+      height: 500px;
+    }
+  
+ .banner h1{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  color: white; 
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  .banner p {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  max-width: 80%;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.banner img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+aside{
+      height:600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f9;
+    }
+
+    .warum p {
+      font-size: 1rem;
+      font-weight: 200;
+      color: rgb(8, 8, 8);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      margin: 20px auto;
+    }
+    .warum h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #0d0439;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     
+    }
+    .alltag h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #0d0439;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .alltag p {
+     
+      font-size: 1rem;
+      font-weight: 200;
+      color: rgb(8, 8, 8);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+     
+    }
+
+    .alltag img {
+      width: 600px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50px;
+      margin: 30px auto;
+    }
+    .first {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 5px;
+      margin: 5px 5px;
+      box-shadow: 0 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .box-icon {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .change,
+    .check {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .change i,
+    .check i {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+      position: relative;
+    }
+    .swiper-slide h1 {
+      position: absolute;
+      font-size: 2.2rem;
+      top: 300px;
+      margin: 0 auto;
+    background-color: rgba(243, 169, 135, 0.288);
+    padding: 10px;
+    border-radius: 5px;
+      font-weight: 800;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    }
+    .swiper-slide p {
+      position: absolute;
+      font-size: 1.5rem;
+      top: 450px;
+      margin: 0 auto;
+      background-color: rgba(230, 158, 110, 0.329);
+    padding: 5px;
+    border-radius: 5px;
+      color: rgb(26, 21, 19);
+      font-weight: 600;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.158);
+    }
+    .swiper-slide span {
+      position: absolute;
+      font-size: 1rem;
+      max-width: 80%;
+      top: 600px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 10px;
+      color: #141313;
+      background-color: rgba(255, 255, 255, 0.377);
+    padding: 10px;
+    border-radius: 5px;
+      font-weight: 500;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+    }
+    .swiper-slide span:hover {
+      background-color: rgba(241, 188, 171, 0.6);
+    }
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-button-next {
+      color: #f4f4f9;
+      margin-left: 30px;
+    }
+    .swiper-button-prev {
+      color: #0d0439;
+    }
+    .swiper-pagination {
+      color: rgb(240, 239, 243);
+    }
+    .vision-container {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(241, 240, 240);
+
+}
+
+.vision h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vision p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vision-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.vision-button:hover {
+  background-color: #0056b3;
+
+}
+
+.vision-produkt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.vision-produkt img {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.vision-produkt img:hover {
+  transform: scale(1.3);
+  transition: all 1s ease-in-out;
+
+}
+
+    @media (min-width: 768px) {
+      aside-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+    }
+    .vision-produkt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 20px;
+    
+
+    }
+    
+  </style>
+

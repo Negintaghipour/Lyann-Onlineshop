@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+    --success-color: #28A745;
+    --danger-color: #DC3545;
+    --warning-color: #FFC107;
+    --info-color: #17A2B8;
+    --light-color: #F8F9FA;
+    --dark-color: #343A40;
+    --background-color: #333;
+    --text-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --highlight-color: rgba(172, 160, 160, 0.5);
+}
