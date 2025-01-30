@@ -6,21 +6,29 @@
         </div>
         <div class="footer-social">
             <h3>Soziale Medien</h3>
-            <ul>
+            <ul class="medien-icons">
                 <li><a href="https://www.facebook.com" target="_blank" <i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com" target="_blank"<i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://www.youtube.com" target="_blank"<i class="fa-brands fa-youtube"></i></a></li>
             </ul>
+            <ul class="rechtlische">
+                <li><a href="/post/daten">Datenschutz</a></li>
+                <li><a href="/post/impresse">Impresse</a></li>
+                <li><a href="/post/agb">AGB</a></li>
+            </ul>
         </div>
     </div>
+
+
 </footer>
+
 
 <style>
 
 footer{
-    background-color:var(--dark-color);
+    background-color:rgb(68, 65, 65);
     color: #fff;
-    height: 400px;
+    height: 500px;
 
 }
 
@@ -63,16 +71,39 @@ footer{
 }
 .footer-social ul li{
     margin: 10px;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow:2px 2px 4px rgba(180, 175, 175, 0.5);
 }
-.footer-social ul li:hover{
-    color:var(--primary-color);
-    font-size:80px;
+.footer-social .medien-icons a:hover{
+    color: var(--primary-color);
+    font-size: 40px;
     transition: all 2s ease;
    
 }
 
+.footer-social ul li:nth-child(1) a::before {
+    background-color: #1877F2; 
+    border-radius: 30%;
+}
+
+.footer-social ul li:nth-child(2) a::before {
+    background-color: #E4405F;
+    border-radius: 30%;
+}
+
+.footer-social ul li:nth-child(3) a::before {
+    background-color: #FF0000; 
+    border-radius: 30%;
+}
+
+.rechtlische a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+    font-size: 10px;
+    transition: all 2s ease;
+
+    
+}
 </style>
 
 

@@ -13,11 +13,18 @@ import logo from "../assets/images/Logo.svg"
             <li><a href="/">Home</a></li>
             <li><a href="/produkt">Produkte</a></li>
             <li><a href="/kontakt">Kontakte</a></li>
-            <li><a href="/">Service</a></li>
            </ul>
         </div>
         <div class="nav-right">
-          <a href="#"><i class="fa-solid fa-user"></i></a>
+            <div class="user-icon">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <div class="user-menu">
+                    <a href="/mein-konto">Mein Konto</a>
+                    <a href="#">Bestellungen</a>
+                    <a href="#">Einstellungen</a>
+                    <a href="#">Abmelden</a>
+                </div>
+            </div>
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
@@ -27,6 +34,44 @@ import logo from "../assets/images/Logo.svg"
   <!-- header end -->
 
    <style>
+    .user-icon {
+    position: relative;
+}
+
+.user-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+
+.user-icon:hover .user-menu {
+    display: block;
+}
+
+.user-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-menu a:last-child {
+    border-bottom: none;
+}
+
+.user-menu a:hover {
+    background: #f0f0f0;
+}
+
+
     body{
         margin-top: 100px;
     }
@@ -112,9 +157,11 @@ height: 70px;
     border-radius: 100%;
   
 }
+
 .main-nav .nav-right a i{
     padding: 10px;
     transition: all 0.5s ease;}
+
 
 ul li {
     display: none;

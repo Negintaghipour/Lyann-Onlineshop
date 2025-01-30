@@ -1,0 +1,24 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import "../css/fontawesome-free-6.7.2-web/css/all.min.css"
+import "../css/style.css";
+const { frontmatter } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint</title>
+</head>
+<body>
+   <Navigation/>
+   <main class="post-content">
+    <h1>{frontmatter.title}</h1>
+    <slot />
+    </main>
+    <Footer/> 
+</body>
+</html>

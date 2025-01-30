@@ -1,5 +1,5 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
+import MainLayout from "../layouts/MainLayout.astro"
 import img5 from "../assets/images/img5.jpg"
 import img7 from "../assets/images/img7.jpg"
 import ax1 from "../assets/images/ax1.jpg"
@@ -15,40 +15,36 @@ import ax10 from "../assets/images/ax10.jpg"
 import ax11 from "../assets/images/ax11.jpg"
 import ax12 from "../assets/images/ax12.jpg"
 import banner from "../assets/images/banner.jpg"
+
 ---
 
 <MainLayout>
-  <section>
-    <div class="swiper slider-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src={img5.src} alt="Bild-1" />
-          <h1>Inovative spitzenthechnologie</h1>
-          <p>
-            Eine einzigartiges Einkaufserlebnis jetzt mit inklusiven Rabatten!
-          </p>
-          <span>
-            Unsere Smartwatches bieten das perfekte Gleichgewicht zwischen Stil
-            und Funktionalität. Egal, ob als zeitloses Accessoire für den Alltag
-            oder als besonderen Begleiter für spezielle Anlässe - Die perfekte
-            Ergänzung zu deiner individuellen Persönlichkeit.
-          </span>
-        </div>
+  <section class="intro-section">
+    <div class="intro-content">
+      <img src={img5.src} alt="Bild-1" />
+      <!-- <h1>Inovative Spitzentechnologie</h1>
+      <p>
+        Ein einzigartiges Einkaufserlebnis jetzt mit inklusiven Rabatten!
+      </p>
+      <span>
+        Unsere Smartwatches bieten das perfekte Gleichgewicht zwischen Stil und Funktionalität. Egal, ob als zeitloses Accessoire für den Alltag oder als besonderen Begleiter für spezielle Anlässe - Die perfekte Ergänzung zu deiner individuellen Persönlichkeit.
+      </span> -->
+    </div>
+  </section>
+  
+  <section class="features-section">
+    <div class="box-icon">
+      <div class="change">
+        <i class="fa-solid fa-repeat"></i>
+        <p>Einfache Rückgabe</p>
+      </div>
+      <div class="check">
+        <i class="fa-solid fa-medal"></i>
+        <p>Geprüfte Produkte</p>
       </div>
     </div>
-    <section class="first">
-      <div class="box-icon">
-        <div class="change">
-          <i class="fa-solid fa-repeat"></i>
-          <p>Einfache Rückgabe</p>
-        </div>
-        <div class="check">
-          <i class="fa-solid fa-medal"></i>
-          <p>Geprüfte Produkte</p>
-        </div>
-      </div>
-    </section>
   </section>
+  
 
   <aside>
     <div class="aside-1">
@@ -112,14 +108,34 @@ import banner from "../assets/images/banner.jpg"
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste molestiae modi quo tempora quod facere dignissimos sit laudantium anim.....
     </p>
   </div>
+  <a href="/chat" class="chat-button">Chat-Service</a>
 </section>
+
 </MainLayout>
 
   <style>
+    .chat-button {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chat-button:hover {
+    background-color: var(--dark-color);
+}
 
     .banner-section{
    
-      width: 100%;
+      max-width: 100%;
       height: 400px;
       position: relative;
 
@@ -132,6 +148,7 @@ import banner from "../assets/images/banner.jpg"
   
  .banner h1{
   position: absolute;
+  max-width: 70%;
   top: 100px;
   left: 50px;
   color: white; 
@@ -238,86 +255,97 @@ aside{
       font-size: 40px;
       margin-bottom: 10px;
     }
+    -------------------------------
+    .intro-section {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
 
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+.intro-content img {
+  display: block;
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  position: relative;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+/* .intro-content h1 {
+  position: absolute;
+  font-size: 2.2rem;
+  top: 300px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 800px;
-      object-fit: cover;
-      position: relative;
-    }
-    .swiper-slide h1 {
-      position: absolute;
-      font-size: 2.2rem;
-      top: 300px;
-      margin: 0 auto;
-    background-color: rgba(243, 169, 135, 0.288);
-    padding: 10px;
-    border-radius: 5px;
-      font-weight: 800;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.intro-content p {
+  position: absolute;
+  font-size: 1.5rem;
+  text-align: center;
+  top: 450px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(26, 21, 19);
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.158);
+}
 
-    }
-    .swiper-slide p {
-      position: absolute;
-      font-size: 1.5rem;
-      top: 450px;
-      margin: 0 auto;
-      background-color: rgba(230, 158, 110, 0.329);
-    padding: 5px;
-    border-radius: 5px;
-      color: rgb(26, 21, 19);
-      font-weight: 600;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.158);
-    }
-    .swiper-slide span {
-      position: absolute;
-      font-size: 1rem;
-      max-width: 80%;
-      top: 600px;
-      border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 20px 10px;
-      color: #141313;
-      background-color: rgba(255, 255, 255, 0.377);
-    padding: 10px;
-    border-radius: 5px;
-      font-weight: 500;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      margin: 0 auto;
-    }
-    .swiper-slide span:hover {
-      background-color: rgba(241, 188, 171, 0.6);
-    }
-    .swiper {
-      margin-left: auto;
-      margin-right: auto;
-    }
+.intro-content span {
+  position: absolute;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 80%;
+  top: 600px;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
 
-    .swiper-button-next {
-      color: #f4f4f9;
-      margin-left: 30px;
-    }
-    .swiper-button-prev {
-      color: #0d0439;
-    }
-    .swiper-pagination {
-      color: rgb(240, 239, 243);
-    }
+.intro-content span:hover {
+  background-color: rgba(241, 188, 171, 0.6);
+} */
+
+.features-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-icon {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+}
+
+.change, .check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.change i, .check i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+  
     .vision-container {
   padding: 20px;
   text-align: center;
@@ -387,8 +415,7 @@ aside{
     flex-wrap:wrap;
     gap: 20px;
     
-
     }
-    
+  
   </style>
 

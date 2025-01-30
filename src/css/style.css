@@ -11,9 +11,57 @@
     --warning-color: #FFC107;
     --info-color: #17A2B8;
     --light-color: #F8F9FA;
-    --dark-color: #343A40;
+    --dark-color: #0f1011;
     --background-color: #333;
     --text-color: #fff;
     --shadow-color: rgba(0, 0, 0, 0.5);
     --highlight-color: rgba(172, 160, 160, 0.5);
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+}
+
+.post-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--highlight-color);
+    color: var(--dark-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+    color: var(--primary-color);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.post-content ul, .post-content ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.post-content ul li, .post-content ol li {
+    margin-bottom: 5px;
+}
+
+.post-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
 }

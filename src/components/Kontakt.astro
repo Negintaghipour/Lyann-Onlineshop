@@ -1,0 +1,83 @@
+<section class="contact">
+    <h2>Für sonstige Fragen</h2>
+    <!-- form -->
+    <form action="#" method="POST">
+        <label for="vorname"></label>
+        <input type="text" id="vorname" name="vorname" placeholder="Name" minlength="1" required>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email" minlength="5">
+        <label for="message"></label>
+        <textarea name="message" id="message" placeholder="Nachricht" rows="5" minlength="1" required></textarea>
+        <button type="submit">Senden</button>
+    </form>
+</section>
+<style>
+
+    body {background-color: #eeeeee;}
+    
+    .contact {
+      max-width: 637px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      margin: 20px auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      background-color: #ccc;
+      
+    }
+     
+    
+    .contact h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; 
+    
+    }
+    
+    label {
+      font-size: 14px;
+      color: #333;
+    }
+    
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    @media (min-width:641px) {
+      form {
+        display: flex;
+        gap: 20px;
+      }
+    }
+    </style>
+     
+    
+    

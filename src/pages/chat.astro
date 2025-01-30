@@ -1,0 +1,88 @@
+---
+import MainLayout from "../layouts/MainLayout.astro"
+---
+<MainLayout>
+  <section>
+    <div class="chat-widget">
+      <div class="chat-header">
+        <span>Chat Service</span>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input">
+          <input type="text" placeholder="Nachricht eingeben..." />
+          <button>Senden</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+ 
+  .chat-widget {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 60px;
+  }
+
+  .chat-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .chat-header span {
+    font-weight: bold;
+  }
+
+  .chat-body {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+
+  .chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .chat-input button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .chat-input button:hover {
+    background-color: var(--dark-color);
+  }
+</style>
