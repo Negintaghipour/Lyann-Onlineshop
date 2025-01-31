@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: Impresse
+title: Impressum
 ---
-## Impressum
+
 Lyann Online-shop
 wegscheid 70
 53347 Alfter

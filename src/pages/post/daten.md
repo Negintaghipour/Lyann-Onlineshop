@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Data-Protection
 ---
-## Data-Protection
+
 1) Einleitung und Kontaktdaten des Verantwortlichen
 
 1.1 Wir freuen uns, dass Sie unsere Website besuchen und bedanken uns für Ihr Interesse. Im Folgenden informieren wir Sie über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer Website. Personenbezogene Daten sind hierbei alle Daten, mit denen Sie persönlich identifiziert werden können.

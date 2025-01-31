@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: AGB
 ---
-## AGB
+
 Inhaltsverzeichnis
 Geltungsbereich
 Vertragsschluss
