@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro"
 ---
 <MainLayout>
   <section>
-    <div class="chat-widget">
+    <div class="chat-box">
       <div class="chat-header">
         <span>Chat Service</span>
       </div>
@@ -20,7 +20,7 @@ import MainLayout from "../layouts/MainLayout.astro"
 
 <style>
  
-  .chat-widget {
+  .chat-box {
     width: 100%;
     max-width: 500px;
     background-color: white;
@@ -38,9 +38,6 @@ import MainLayout from "../layouts/MainLayout.astro"
     background-color: var(--primary-color);
     color: white;
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .chat-header span {
@@ -54,9 +51,9 @@ import MainLayout from "../layouts/MainLayout.astro"
   }
 
   .chat-messages {
-    flex: 1;
+    flex-grow: 1;
     padding: 10px;
-    overflow-y: auto;
+    
   }
 
   .chat-input {
