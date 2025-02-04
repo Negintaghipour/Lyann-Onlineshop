@@ -1,12 +1,13 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import Info from '../components/Info.astro';
 ---
 
 <MainLayout>
+<Info/>
     <section class="contact">
         <h2>Für sonstige Fragen</h2>
-      
-        <form action="#" method="POST">
+        <form action="https://formspree.io/f/xovqzrnk" method="POST">
             <label for="vorname"></label>
             <input type="text" id="vorname" name="vorname" placeholder="Name" minlength="1" required>
             <label for="email"></label>
@@ -23,10 +24,10 @@ import MainLayout from '../layouts/MainLayout.astro';
 body {background-color: #eeeeee;}
 
 .contact {
-  max-width: 637px;
+  max-width: 800px;
   padding: 20px;
   background-color: #f9f9f9;
-  margin: 200px auto;
+  margin: 100px auto;
   border: 2px solid #ccc;
   border-radius: 8px;
   background-color: #ccc;
